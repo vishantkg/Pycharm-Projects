@@ -73,3 +73,5 @@ def sendMessage(friend, message_content = ""):
     # time.sleep(random.randrange(1,2))
 
     # chrome.close()
+
+sendMessage('vishantkg')

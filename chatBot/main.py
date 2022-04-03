@@ -10,4 +10,4 @@ from selenium import webdriver
 # time.sleep(10)
 
 friend = 'vishantkg'
-sendMessage(friend)
+sendMessage()
