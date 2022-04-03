@@ -1,11 +1,13 @@
 # from Getting_Images import getimage_url
 # from Message_friend import *
+from selenium import webdriver
 import sys
 sys.path.append("C:\\Users\\Vishant\\PycharmProjects\\chatBot\\")
+from Base import *
 sys.path.append("C:\\Users\\Vishant\\PycharmProjects\\chatBot\\Pages\\")
 from Loginpage import *
-from selenium import webdriver
-from Base import *
+
+
 
 
 # imgurl = getimage_url()
@@ -15,7 +17,8 @@ from Base import *
 
 username = 'nomadsapien'
 password = 'Hello@123'
-chrome = openurl()
+browser = Browser()
+chrome = browser.openurl()
 loginpage = Loginpage()
 loginpage.login(username, password, chrome)
-comment = 
+chrome.close()

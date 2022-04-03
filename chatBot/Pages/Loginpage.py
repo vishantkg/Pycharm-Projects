@@ -35,9 +35,19 @@ class Loginpage:
         try:
             chrome.find_element_by_xpath(self.notnowbutton).click()
             time.sleep(random.randrange(3,4))
+        except:
+            pass
+        
+        try:
             chrome.find_element_by_xpath(self.notnownotifbutton).click()
             time.sleep(random.randrange(3,4))
+        except:
+            pass
+        
+        try:
             chrome.find_element_by_xpath(self.instagramheadericon).click()
             time.sleep(random.randrange(3,4))
         except:
             pass
+
+
